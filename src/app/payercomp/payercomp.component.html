@@ -1,0 +1,192 @@
+<form>
+                <div style="color:steelblue" >
+                                Payer Information</div><br>
+        <div>
+                        <input (click)="pushArray()"type="button"value="submit">
+                        <button class="clr-btn" onclick="this.form.reset();">cancel</button><br><br>
+    
+   </div>
+
+   
+            <div class="form-group">
+        <label for="payerName">Payer Name</label>
+         <input required 
+         [(ngModel)]="plobj.payerName"
+         name="payerName" 
+         type="text" 
+         placeholder="Enter payerName"
+         class="form-control">  
+         <div style="color: red">
+                        {{error}}</div>
+            </div>
+           
+         <div class="form-group"><br><br>
+          <label for="payerType">Payer Type</label>
+        <input required 
+        [(ngModel)]="plobj.payerType"
+        name="payerType"
+        type="text" 
+        placeholder="Enter payerType" 
+        class="form-control">
+       <!--- <div style="color: red">
+                        {{error2}}</div>-->
+        <label for="payerCode">Payer Code</label>
+        <input required 
+        [(ngModel)]="plobj.payerCode" 
+        name="payerCode"
+        type="text" 
+        placeholder="Enter payerCode" 
+        class="form-control" ><br><br>
+        <div style="color: red">
+                        {{error1}}{{error2}}</div><br>
+    </div>
+ 
+    <div class="form-group">
+        <label for="address">AddressLine1</label>
+        <input required 
+        [(ngModel)]="plobj.address" 
+        name="address"
+        type="text" 
+        placeholder="Enter addressline1" 
+        class="form-control" >
+        <!--<div style="color: red">
+                        {{error4}}</div>-->
+        <label for="addr">AddressLine2</label>
+        <input required 
+        [(ngModel)]="plobj.addr" 
+        name="addr"
+        type="text" 
+        placeholder="Enter addressline2" 
+        class="form-control" >
+        <div style="color: red">
+                        {{error3}}{{error4}}</div>
+    </div><br>
+  
+<div class="form-group">
+    <label for="city">City</label>
+    <input required 
+    [(ngModel)]="plobj.city" 
+    name="city"
+    type="text" 
+    placeholder="Enter city" 
+    class="form-control" >
+    
+    <label for="state">State</label>
+    <input required 
+    [(ngModel)]="plobj.state" 
+    name="state"
+    type="text" 
+    placeholder="Enter state" 
+    class="form-control" >
+    
+    <label for="zip">Zip</label>
+    <input required 
+    [(ngModel)]="plobj.zip" 
+    name="zip"
+    type="text" 
+    placeholder="Enter zip" 
+    class="form-control" >
+    <div style="color: red">{{error5}}{{error6}}{{erroe7}}</div><br><br>
+    
+</div>
+
+    
+    <div class="form-group">
+        <label for="contact">Phone</label>
+        <input required
+        [(ngModel)]="plobj.contact"
+        name="contact"  
+       minlength="10" maxlength="10" type="text" placeholder="Enter contact"
+        class="form-control" >
+       
+        <label for="fax">Fax</label>
+        <input required 
+        [(ngModel)]="plobj.fax"
+        name="fax"
+        type="text" 
+        placeholder="Enter fax"
+        class="form-control" >
+      
+        <label for="Email">Email</label>
+        <input required 
+        [(ngModel)]="plobj.email"
+        name="Email"
+        type="text" 
+        ng-pattern="string"
+        placeholder="Enter Email"
+        class="form-control" >
+        <div style="color: red">
+                        {{error8}}{{error9}}{{error10}}</div>
+    </div><br><br>
+    
+  
+                <div class="form-group">
+            <label for="contactPerson">Contact Person</label>
+             <input required 
+             [(ngModel)]="plobj.contactPerson"
+             name="contactPerson" 
+             type="text" 
+             placeholder="Enter contactPerson"
+             class="form-control">  
+             <div style="color: red">
+                        {{error11}}</div><br>
+                </div>
+              
+                                
+                                                <div class="form-group">
+                                            <label for="require">Require 485 / PDC Plus</label>
+                                             <input required 
+                                             [(ngModel)]="plobj.require"
+                                             name="require" 
+                                             type="checkbox" 
+                                             placeholder="Enter contactPerson"
+                                             class="form-control">  
+                                             <div style="color: red">
+                                                        {{error12}}</div>                   
+                                                </div><br>
+                                                ............................................................................................................................................<br>
+                                                Deactive Payer<br><br>
+                                                
+                                                
+                                                                <div class="form-group">
+                                                            <label for="inactive">This payer is inactive</label>
+                                                             <input required 
+                                                             [(ngModel)]="plobj.inactive"
+                                                             name="inactive" 
+                                                             type="checkbox" 
+                                                             placeholder="Enter please"
+                                                             class="form-control">        
+                                                             <div style="color:steelblue">
+                                                What is this?</div> 
+                                                <div style="color: red">
+                                                                {{error13}}</div>           
+                                                                </div><br>
+                                                                
+                             
+                                                <div class="form-group">
+                                            <label for="comments">Comments</label>
+                                             <input required 
+                                             [(ngModel)]="plobj.comments"
+                                             name="comments" 
+                                             type="text" 
+                                             placeholder="Enter comments"
+                                             class="form-control">  
+                                             <div style="color: red">
+                                                        {{error14}}</div>                   
+                                                </div><br>
+    <div>
+            <input (click)="pushArray()"type="button"value="submit">
+   
+           <!-- <input (click)="listUser(fname)"type="button"value="listuser">-->
+    <button class="clr-btn" onclick="this.form.reset();">cancel</button>
+    
+  
+    
+    
+
+        
+    </div>
+
+</form>
+
+
